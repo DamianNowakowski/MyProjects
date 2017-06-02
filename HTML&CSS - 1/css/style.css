@@ -1,0 +1,433 @@
+* {
+  padding: 0px;
+  margin: 0 0 0 0;
+}
+
+body {
+  background-color: #EFECE5;
+  font-family: 'Catamaran', sans-serif;
+}
+
+#logo_top {
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  background-color: #EFECE5;
+}
+
+#top_title {
+  color: black;
+  width: 1000px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo_pic {
+  width: 140px;
+  height: 140px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: left;
+}
+
+#top_text {
+  padding-top: 40px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #B2B2B2;
+}
+
+#top_text span {
+  color: #E95354;
+}
+
+.clear-both {
+  clear: both;
+}
+
+#nav {
+  width: 100%;
+  height: 60px;
+  background-color: #E95354;
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+#main_menu {
+  list-style-type: none;
+  font-size: 20px;
+  height: 60px;
+  line-height: 150%;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+#main_menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 15px 0px 15px;
+  margin-top: 10px;
+  border-right: 2px dashed #A71515;
+}
+
+#main_menu > li {
+  float: left;
+  height: 60px;
+  text-align: center;
+}
+
+#main_menu > li:first-child > a {
+  border-left: 2px dashed #A71515;
+}
+
+#main_menu > li > a:hover {
+  background-color: #FE7E7E;
+}
+
+#main_menu li ul {
+  list-style-type: none;
+  width: auto;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+#main_menu li:hover ul {
+  display: block;
+}
+
+#main_menu li ul li {
+  background-color: #FE7E7E;
+  position: relative;
+  line-height: 28px;
+  border-top: 1px dashed black;
+}
+
+#main_menu li ul li:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#main_menu li ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+}
+
+#main_menu li ul li:hover {
+  cursor: pointer;
+  background-color: #E95354;
+}
+
+#main_menu li ul li:hover a {
+  font-weight: 800;
+}
+
+#content {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: white;
+}
+
+.picture img{
+  width: 100%;
+}
+
+.paragraph {
+  width: 100%;
+}
+
+.step_num {
+  font-size: 45px;
+  font-weight: 800;
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+}
+
+.header {
+  font-size: 25px;
+  display: inline-block;
+}
+
+#header_1 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  left: 10px;
+  top: 930px;
+  visibility: hidden;
+}
+
+#header_2 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  left: 10px;
+  top: 1980px;
+  visibility: hidden;
+}
+
+#header_3 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  left: 10px;
+  top: 3050px;
+  visibility: hidden;
+}
+
+#header_4 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  left: 10px;
+  top: 4140px;
+  visibility: hidden;
+}
+
+#header_5 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  left: 10px;
+  top: 5300px;
+  visibility: hidden;
+}
+
+#header_6 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  left: 10px;
+  top: 5800px;
+  visibility: hidden;
+}
+
+.list_first_page {
+  width: 95%;
+  font-size: 20px;
+  float: right;
+  margin-bottom: 30px;
+}
+
+.article {
+  width: 98%;
+  font-size: 20px;
+  float: right;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.layout {
+  width: 1000px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.layout h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.contact_window {
+  width: 650px;
+}
+
+input[type=email],
+textarea {
+  width: 600px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #FF7E7E;
+  margin-top: 30px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(255,126,126,0.52);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(255,126,126,0.52);
+  box-shadow: 0px 0px 30px 5px rgba(255,126,126,0.52);
+}
+
+input::placeholder,
+textarea::placeholder {
+  padding-left: 10px;
+}
+
+#email_address {
+  height: 30px;
+}
+
+#message {
+  height: 120px;
+}
+
+#button_send {
+  width: 150px;
+  height: 30px;
+  margin-left: 225px;
+  margin-top: 20px;
+  color: white;
+  background-color: #FF7E7E;
+  font-family: 'Catamaran', sans-serif;
+  outline: none;
+  border: 1px solid #FF7E7E;
+  letter-spacing: 3px;
+}
+
+#button_send:hover {
+  background-color: #E95353;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  background-color: #FFA8A8;
+  display: block;
+}
+
+#footer_container {
+  width: 65%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#copyright {
+  float: left;
+  display: block;
+  width: 400px;
+  height: 50px;
+}
+
+#copyright p {
+  width: 400px;
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+#socials {
+  float: right;
+  height: 50px;
+  display: block;
+}
+
+#fb {
+  width: 50px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  border-radius: 100px 100px 100px 100px;
+  margin-right: 5px;
+}
+
+#fb:hover {
+  background-color: #4668b3;
+  cursor: pointer;
+}
+
+#yt {
+  width: 50px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  border-radius: 100px 100px 100px 100px;
+  margin-right: 5px;
+}
+
+#yt:hover {
+  background-color: #d94348;
+  cursor: pointer;
+}
+
+#tw {
+  width: 50px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  border-radius: 100px 100px 100px 100px;
+  margin-right: 5px;
+}
+
+#tw:hover {
+  background-color: #3095d3;
+  cursor: pointer;
+}
+
+#gplus {
+  width: 50px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  border-radius: 100px 100px 100px 100px;
+  margin-right: 5px;
+}
+
+#gplus:hover {
+  background-color: #D95333;
+  cursor: pointer;
+}
+
+#move_up {
+  width: 100px;
+  height: 100px;
+  background-color: #E95354;
+  border-radius: 15px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  text-align: center;
+  display: none;
+}
+
+#scroll_up {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-up-open {
+  font-size: 50px;
+  color: white;
+  position: relative;
+  top: 10px;
+}
