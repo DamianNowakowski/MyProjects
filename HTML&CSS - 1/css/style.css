@@ -56,13 +56,8 @@ body {
   height: 60px;
   background-color: #E95354;
   text-align: center;
-}
-
-.sticky {
-  position: fixed;
-  left: 0;
+  position: sticky;
   top: 0;
-  z-index: 10;
 }
 
 #main_menu {

@@ -1,29 +1,27 @@
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
 
   var NavY = $('#nav').offset().top;
 
 
-  $('#scroll_up').click(function() {
+  var movingUp = function() {
+    var scrollY = $(window).scrollTop();
+    if (scrollY > 300) {
+      $('#move_up').stop(true).fadeIn(500);
+  } else {
+      $('#move_up').stop(true).fadeOut(800);
+  }};
+
+    $('#move_up').click(function() {
      $.scrollTo($('body'), 1000);
-     $('#move_up').fadeOut();
+     return false;
    });
 
 
-  var stickyNav = function() {
-    var scrollY = $(window).scrollTop();
-    if (scrollY > NavY) {
-      $('#nav').addClass('sticky');
-      $('#move_up').fadeIn();
-    } else {
-      $('#nav').removeClass('sticky');
-
-    }
-  };
-
-  stickyNav();
+  movingUp();
 
   $(window).scroll(function() {
-    stickyNav();
+    console.log('123');
+    movingUp();
   });
 
   $.scrollTo(0);
